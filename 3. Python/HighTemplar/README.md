@@ -6,6 +6,6 @@ The program is named after the Protoss High Templar unit from the Starcraft univ
 
 The program is currently licensed under the MIT License, allowing open-source contributions and improvements. In the future, the program will be made cross-platform to allow for use on multiple operating systems.
 
-Please note that the program may present bugs, but it primarily works as intended. Any contributions or feedback from the community are welcome to help improve the program's functionality.
+Please note that the program may present bugs, but it primarily works as intended. This is just something I threw togather really quickly to solve a problem I had on my local network.  Any contributions or feedback from the community are welcome to help improve the program's functionality. 
 
 Thank you for using High Templar.
