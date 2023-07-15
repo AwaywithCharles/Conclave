@@ -10,9 +10,9 @@ To view the complete Software Requirements Specification (SRS) document, please 
 
 ## Java Implementation
 
-The Java implementation of the Book Inventory program consists of two classes: `CMIS242ASG1BostwickC` and `Book`. These classes work together to provide the desired functionalities.
+The Java implementation of the Book Inventory program consists of two classes: `BookInventorySystem` and `Book`. These classes work together to provide the desired functionalities.
 
-The `CMIS242ASG1BostwickC` class serves as the main driver for the program. It manages the book inventory using an `ArrayList` and provides a user-friendly interface through a menu system. The class includes methods to add a book, remove a book, find a book, and display all books in the inventory. It also includes error handling to ensure proper program execution.
+The `BookInventorySystem` class serves as the main driver for the program. It manages the book inventory using an `ArrayList` and provides a user-friendly interface through a menu system. The class includes methods to add a book, remove a book, find a book, and display all books in the inventory. It also includes error handling to ensure proper program execution.
 
 The `Book` class represents a book with attributes such as ID, title, and price. It includes a constructor to initialize these attributes and getter methods to access them. Additionally, it provides a method to display the book's information.
 
