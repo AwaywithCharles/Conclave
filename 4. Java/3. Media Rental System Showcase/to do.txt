@@ -1,0 +1,5 @@
+To Do:
+
+
+fix main(), slim down for efficiency...
+switch to gui

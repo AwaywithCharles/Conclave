@@ -1,0 +1,126 @@
+# Software Requirements Specification (SRS) for Basic RPG Game in Java
+
+## 1. Introduction
+
+### 1.1 Purpose
+The purpose of this document is to provide a comprehensive Software Requirements Specification (SRS) for developing a basic RPG game in Java. This document outlines the functional and non-functional requirements, design constraints, and system behavior of the game.
+
+### 1.2 Scope
+The RPG game will be implemented using the Java programming language. The game will feature multiple phases, each focusing on a specific aspect of game development, such as objects and classes, encapsulation, class hierarchy, GUIs, polymorphism, dynamic binding, exceptions, and two-dimensional arrays with file handling.
+
+## 2. Overall Description
+
+### 2.1 Product Perspective
+The RPG game will be a standalone Java application, developed using object-oriented principles. It will incorporate various game mechanics and features, providing an engaging and interactive gameplay experience.
+
+### 2.2 Product Features
+The RPG game will include the following features:
+- Object-oriented design and implementation using Java.
+- Multiple phases, each representing a specific aspect of game development.
+- Encapsulation and data hiding to ensure proper data access.
+- Class hierarchy and inheritance for efficient code reuse.
+- Graphical User Interface (GUI) using JFrame and JPanel.
+- Polymorphism, overloading, and overriding for flexible and extensible gameplay.
+- Dynamic binding for runtime method resolution.
+- Exception handling to handle errors and exceptions gracefully.
+- Two-dimensional arrays and file handling for data storage and retrieval.
+
+### 2.3 User Classes and Characteristics
+The RPG game is targeted towards players who enjoy role-playing games. Users should have a basic understanding of Java programming concepts and be familiar with RPG game mechanics.
+
+## 3. System Features and Requirements
+
+### Phase 1: Objects and Classes
+
+#### 3.1 Feature 1: Modeling Real-life Objects
+- The game should allow the creation of Java classes representing real-life objects.
+- Each class should have at least one attribute and an instance method.
+- A separate driver class should be provided to instantiate objects, assign attribute values, call methods, and demonstrate successful execution.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 2: Adding Encapsulation to a Java Class
+
+#### 3.2 Feature 2: Encapsulation
+- The game should enhance the Java classes from Phase 1 by adding encapsulation.
+- All attributes should be made private, and getter and setter methods should be included.
+- The main method should demonstrate the correct functionality of all methods.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 3: Creating Class Hierarchy (Inheritance)
+
+#### 3.3 Feature 3: Class Hierarchy and Inheritance
+- The game should allow the creation of a Java class with two subclasses (children).
+- Each class should have at least one attribute and a method.
+- The parent class should have an attribute/method common to both children, while each child should have a unique attribute/method.
+- The main method should demonstrate correct functionality and inheritance.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 4: GUIs
+
+#### 3.4 Feature 4: Graphical User Interface
+- The game should incorporate a GUI using JFrame and JPanel.
+- A selected widget from the Java swing package should be added to the GUI.
+- Event handlers should be implemented for the chosen widget, allowing for different actions to be performed.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 5: Polymorphism - Overloading and Overriding
+
+#### 3.5 Feature 5: Polymorphism
+- The game should enhance the class hierarchy from Phase 3 by adding one overriding method and one overloading method.
+- The main method should demonstrate the correct functionality of both methods.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 6: Dynamic Binding
+
+#### 3.6 Feature 6: Dynamic Binding
+- The game should include a small program demonstrating dynamic binding.
+- Comments should explain which statement(s) demonstrate dynamic binding.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 7: Exceptions
+
+#### 3.7 Feature 7: Exception Handling
+- The game should enhance the class hierarchy from Phase 5 by adding a user-defined exception.
+- The exception should be thrown during validation or error checking in one of the methods.
+- The main method should demonstrate the proper handling of the exception.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+### Phase 8: Two-dimensional Arrays and File Handling
+
+#### 3.8 Feature 8: Two-dimensional Arrays and File Handling
+- The game should read data from a file and store it in a two-dimensional array.
+- Nested for-loops should be used to print the values in a table format.
+- The program should include a screenshot of successful execution.
+- Coding style should follow recommended practices, including meaningful variable names, proper spacing, and comments for clarity and documentation.
+
+## 4. Non-functional Requirements
+
+### 4.1 Performance
+- The game should provide smooth gameplay with minimal lag or delays.
+- Response times for user interactions should be fast and efficient.
+
+### 4.2 Usability
+- The game should have an intuitive and user-friendly interface.
+- Clear instructions and prompts should be provided to guide the user throughout the gameplay.
+
+### 4.3 Portability
+- The game should be developed to run on multiple platforms without requiring significant modifications.
+- It should be compatible with popular Java development environments and operating systems.
+
+### 4.4 Maintainability
+- The game's code should be well-structured and modular to facilitate future enhancements and maintenance.
+- Proper commenting and documentation should be maintained for easy understanding and future updates.
+
+### 4.5 Coding Style and Documentation
+- The Java program should follow recommended coding style practices, including meaningful variable names, proper spacing, and the use of comments for clarity and documentation.
+- Javadoc comments should be provided at the beginning of the program, including the author's name, date, and a brief program description.
+- Comments should be used to describe variables and code blocks, following the documentation guidelines provided in Week 1.
+- Class names should be written in upper CamelCase, and constants should be written in all capitals.
+
+## 5. Glossary
+- Java: A high-level programming language widely used for developing various applications.
+- RPG: Role-Playing Game, a genre of video games where players assume the roles of characters and engage in fictional adventures and quests.
+- GUI: Graphical User Interface, a visual way of interacting with a software application using graphical elements such as windows, buttons, and menus.
+- JFrame: A class in Java's swing package used to create and manage top-level windows in GUI applications.
+- JPanel: A class in Java's swing package used to provide a container for organizing and laying out graphical components in a GUI application.
+- OOP: Object-Oriented Programming, a programming paradigm based on the concept of objects

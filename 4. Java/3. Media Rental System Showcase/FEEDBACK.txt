@@ -1,0 +1,3 @@
+Criterion Feedback
+Expected them all to be in same horizontal line.
+Should place a lot of the code in a method outside of the main(). -5

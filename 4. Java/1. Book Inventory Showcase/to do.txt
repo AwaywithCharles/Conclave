@@ -1,0 +1,5 @@
+remove duplicate single book button
+main to bottom
+remove isbn
+add exit button
+fix documentation

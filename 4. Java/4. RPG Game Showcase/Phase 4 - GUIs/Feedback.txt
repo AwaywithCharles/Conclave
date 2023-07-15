@@ -1,0 +1,2 @@
+WK4BostwickC - JList Feedback Timko
+Program structure incorrect. Program name should be at top. The main () should be last element in program containing the instantiation of the class.

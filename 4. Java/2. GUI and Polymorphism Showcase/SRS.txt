@@ -1,0 +1,57 @@
+# Software Requirements Specification (SRS)
+Project: Demonstrate GUI & Polymorphism
+
+## 1. Introduction
+
+The GUI & Polymorphism project aims to develop a Java program that includes a GUI interface and implements a converter class hierarchy. The program allows users to convert values between different modes, such as temperature and distance. The GUI interface enhances the program's user-friendliness but is separate from the core functionality of performing conversions.
+
+## 2. Converter Class Hierarchy
+
+### 2.1 Converter Class
+
+The Converter class serves as the parent class for specific converter classes and includes the following:
+- A private attribute for the input, representing a data type of double.
+- A default constructor with no parameters that sets the input to Double.NaN (Not a Number).
+- An overloaded constructor with an input parameter.
+- A method named convert() that returns the input value.
+
+### 2.2 TemperatureConverter Class
+
+The TemperatureConverter class is a child class of Converter and includes the following:
+- Constructors that call the parent constructors.
+- An overridden convert() method that converts the input Fahrenheit temperature to Celsius using the formula: C = ((F-32) * 5)/9.
+- If the instance has no input value or the input is not a number, it should return Double.NaN.
+
+### 2.3 DistanceConverter Class
+
+The DistanceConverter class is a child class of Converter and includes the following:
+- Constructors that call the parent constructors.
+- An overridden convert() method that converts the input distance in miles to kilometers using the formula: KM = M * 1.609.
+- If the instance has no input value or the input is not a number, it should return Double.NaN.
+
+## 3. GUIConverter Class
+
+The GUIConverter class should be implemented using JFrame and JPanel to create a graphical user interface. The GUI should have the following features:
+- The window should be centered on the computer screen.
+- Three buttons: Distance, Temperature, and Exit.
+- Clicking the Exit button terminates the program.
+- Clicking the Distance button displays an input dialog where the user can type a value and click OK.
+- Once the user clicks OK, a message dialog displays the result.
+- After reviewing the result, clicking OK returns the program to the original window.
+- Clicking the Temperature button displays an input dialog to input a value. After clicking OK, a message dialog pops up with the converted result.
+- The window should be appropriately sized, with buttons of equal dimensions surrounded by a maximum of ¼ to ½ inch of space.
+
+## 4. Main Method
+
+The main method serves as the program's entry point and should include the following:
+- Instantiation of the Converter class.
+- Display of the GUI interface, either directly in the main method or called by another method.
+- The GUI interface should consist of the two options (Temperature and Distance) and an Exit button.
+- The main method should be minimal, with most of the coding implemented in separate methods outside the main method.
+
+## 5. Style and Documentation
+
+The Java program should follow recommended coding style practices, including meaningful variable names, proper spacing, and the use of comments for clarity and documentation.
+- Javadoc comments should be provided at the beginning of the program, including the author's name, date, and a brief program description.
+- Comments should be used to describe variables and code blocks, following the documentation guidelines provided in Week 1.
+- Class names should be written in upper CamelCase, and constants should be written in all capitals.
