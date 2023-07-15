@@ -33,7 +33,7 @@ The converter class hierarchy consists of the following classes:
 - The class overrides the `convert()` method to convert the input distance in miles to kilometers using the formula: KM = M * 1.609.
 - If the instance has no input value or the input is not a number, it returns Double.NaN.
 
-To view the complete Java implementation of the converter class hierarchy, please refer to the [CMIS242ASG3BostwickC.java](CMIS242ASG3BostwickC.java) file in this repository.
+To view the complete Java implementation of the converter class hierarchy, please refer to the [ConverterApp.java](ConverterApp.java) file in this repository.
 
 ## GUIConverter Class
 
@@ -49,14 +49,14 @@ The `GUIConverter` class provides the main graphical user interface (GUI) for th
 - After clicking OK, a message dialog pops up with the converted result.
 - The window is appropriately sized, with buttons of equal dimensions surrounded by a maximum of ¼ to ½ inch of space.
 
-To view the complete Java implementation of the GUIConverter class, please refer to the [CMIS242ASG3BostwickC.java](CMIS242ASG3BostwickC.java) file in this repository.
+To view the complete Java implementation of the GUIConverter class, please refer to the [ConverterApp.java](ConverterApp.java) file in this repository.
 
 ## Usage
 
 To run the GUI & Polymorphism program, follow these steps:
 
 1. Make sure you have Java Development Kit (JDK) installed on your machine.
-2. Compile the `CMIS242ASG3BostwickC.java` file using the following command: javac CMIS242ASG3BostwickC.java
+2. Compile the `ConverterApp.java` file using the following command: javac ConverterApp.java
 
 3. Run the compiled file using the following command: java CMIS242ASG3BostwickC
 
@@ -71,7 +71,7 @@ To run the GUI & Polymorphism program, you need to have the following software i
 
 ## Notes
 
-- The provided implementation in the `CMIS242ASG3BostwickC.java` file is a partial implementation based on the specified requirements in the Software Requirements Specification (SRS). Additional code may be required to ensure the program works as intended and meets all requirements.
+- The provided implementation in the `ConverterApp.java` file is a partial implementation based on the specified requirements in the Software Requirements Specification (SRS). Additional code may be required to ensure the program works as intended and meets all requirements.
 - The project adheres to recommended coding style practices, including meaningful variable names, proper spacing, and the use of comments for clarity and documentation.
 - Javadoc comments are provided at the beginning of the program, including the author's name, date, and a brief program description.
 - Comments are used to describe variables and code blocks, following the documentation guidelines.
