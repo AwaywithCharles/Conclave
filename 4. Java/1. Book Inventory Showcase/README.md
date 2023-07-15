@@ -10,13 +10,13 @@ To view the complete Software Requirements Specification (SRS) document, please 
 
 ## Java Implementation
 
-The Java implementation of the Book Inventory program consists of two classes: `BookInventorySystem` and `Book`. These classes work together to provide the desired functionalities.
+The Java implementation of the Book Inventory program consists of two classes: `BookInventoryManager` and `Book`. These classes work together to provide the desired functionalities.
 
-The `BookInventorySystem` class serves as the main driver for the program. It manages the book inventory using an `ArrayList` and provides a user-friendly interface through a menu system. The class includes methods to add a book, remove a book, find a book, and display all books in the inventory. It also includes error handling to ensure proper program execution.
+The `BookInventoryManager` class serves as the main driver for the program. It manages the book inventory using an `ArrayList` and provides a user-friendly interface through a menu system. The class includes methods to add a book, remove a book, find a book, and display all books in the inventory. It also includes error handling to ensure proper program execution.
 
 The `Book` class represents a book with attributes such as ID, title, and price. It includes a constructor to initialize these attributes and getter methods to access them. Additionally, it provides a method to display the book's information.
 
-To view the complete Java implementation, please refer to the [BookInventorySystem.java](BookInventorySystem.java) file in this repository.
+To view the complete Java implementation, please refer to the [BookInventoryManager.java](BookInventoryManager.java) file in this repository.
 
 ## Usage
 
@@ -24,7 +24,7 @@ To run the Book Inventory program, follow these steps:
 
 1. Make sure you have Java Development Kit (JDK) installed on your machine.
 
-2. Compile the `BookInventorySystem.java` file using the following command: javac BookInventorySystem.java
+2. Compile the `BookInventoryManager.java` file using the following command: javac BookInventorySystem.java
 
 3. Run the compiled file using the following command: java BookInventorySystem
 
@@ -38,7 +38,7 @@ To run the Book Inventory program, you need to have the following software insta
 
 ## Notes
 
-- The implementation provided in the `BookInventorySystem.java` file is a partial implementation based on the specified requirements in the Software Requirements Specification (SRS). Additional code may be required to ensure the program works as intended and meets all requirements.
+- The implementation provided in the `BookInventoryManager.java` file is a partial implementation based on the specified requirements in the Software Requirements Specification (SRS). Additional code may be required to ensure the program works as intended and meets all requirements.
 - The project adheres to recommended coding style practices, including meaningful variable names, proper spacing, and the use of comments for clarity and documentation.
 - Proper error handling is implemented to handle incorrect input or invalid book IDs provided by the user.
 - The project includes documentation in the form of Javadoc comments and comments for variables and code blocks.
