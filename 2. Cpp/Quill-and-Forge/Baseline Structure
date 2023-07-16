@@ -1,0 +1,50 @@
+quill-and-forge/
+├── src/
+│   ├── main.cpp
+│   ├── document.cpp
+│   ├── file_manager.cpp
+│   ├── text_formatting.cpp
+│   ├── undo_redo.cpp
+│   ├── spell_check.cpp
+│   ├── print_preview.cpp
+│   ├── gui.cpp
+│   ├── file_dialog.cpp
+│   ├── menu_bar.cpp
+│   ├── ...
+├── include/
+│   ├── document.h
+│   ├── file_manager.h
+│   ├── text_formatting.h
+│   ├── undo_redo.h
+│   ├── spell_check.h
+│   ├── print_preview.h
+│   ├── gui.h
+│   ├── file_dialog.h
+│   ├── menu_bar.h
+│   ├── ...
+├── resources/
+│   ├── fonts/
+│   ├── images/
+│   └── ...
+├── tests/
+│   ├── document_test.cpp
+│   ├── file_manager_test.cpp
+│   ├── text_formatting_test.cpp
+│   ├── undo_redo_test.cpp
+│   ├── spell_check_test.cpp
+│   ├── print_preview_test.cpp
+│   ├── gui_test.cpp
+│   ├── ...
+├── docs/
+│   ├── user_manual.pdf
+│   └── ...
+├── build/
+│   ├── main.o
+│   ├── document.o
+│   ├── file_manager.o
+│   ├── ...
+│   ├── quill-and-forge          (executable file)
+│   └── ...
+├── README.md
+├── LICENSE
+└── ...
