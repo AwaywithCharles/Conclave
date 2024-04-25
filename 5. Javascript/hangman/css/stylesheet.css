@@ -1,0 +1,432 @@
+/* ------------------------------------------------------------------- */
+/* Table of Contents
+-----------------
+1. Import Fonts
+2. Base Styles
+    2.1 Root Variables
+    2.2 Reset Styles
+    2.3 Typography
+    2.4 Header Styles
+    2.5 Button and Link Styles
+3. Layout Styles
+    3.1 General Layout
+    3.2 Back Button Styling
+4. Interactive Elements
+    4.1 CTA Buttons
+5. Homepage Styles
+6. Responsive Design Adjustments
+7. Footer Styles
+8. Hangman Game Styles
+*/
+/* ------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 1. Import Fonts --------------------------------- */
+/* ------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 2. Base Styles --------------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* 2.1 Root Variables */
+:root {
+    --gray-background: #DDD;
+    --border-radius: 0.4rem;
+}
+
+/* 2.2 Reset Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono';
+}
+
+body {
+    min-height: 100%;
+}
+
+/* 2.3 Typography */
+*, h1, h2, p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+/* 2.4 Header Styles */
+header p {
+    text-align: right;
+    margin: 1rem;
+}
+
+/* 2.5 Button and Link Styles */
+a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a.meet-the-team {
+    display: block;
+}
+
+button, .start-game {
+    border-radius: var(--border-radius);
+    font-weight: bold;
+}
+
+.start-game {
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: black;
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 3. Layout Styles ------------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* 3.1 General Layout */
+.homepage {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3.2 Back Button Styling */
+.back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.back img[src="back-arrow.svg"] {
+    height: 3.5rem;
+    width: auto;
+    padding: 0 1.5rem;
+}
+
+.back p {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 4. Interactive Elements ------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* 4.1 CTA Buttons */
+.start-game, .meet-the-team, .toggle-profile {
+    border-radius: var(--border-radius);
+    display: block;
+}
+
+.start-game {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 5. Homepage Styles --------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* styles for section highlighting various features or sections */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.highlights article {
+    padding: 10px;
+    background-color: var(--gray-background);
+    border-radius: var(--border-radius);
+}
+
+/* call to action button styles */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cta-buttons a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 6. Responsive Design Adjustments ---------------- */
+/* ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+    :root {
+        --link-btn-font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    .start-game {
+        margin-top: 6rem;
+        margin-bottom: 2rem;
+        padding: 2rem 2.5rem;
+        font-size: var(--link-btn-font-size);
+    }
+
+    a {
+        font-size: var(--link-btn-font-size);
+    }
+
+    .back {
+        margin: 1rem;
+    }
+
+    .highlights, .profiles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toggle-profile, .profile {
+        width: 85%;
+        margin: 0.75rem auto;
+        padding: 1.5rem 1.75rem;
+    }
+
+    .toggle-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: var(--link-btn-font-size);
+        border: none;
+        background-color: var(--gray-background);
+    }
+
+    .toggle-profile p {
+        font-weight: bold;
+        font-size: var(--link-btn-font-size);
+    }
+
+    .toggle-profile img {
+        width: 3.5rem;
+        height: auto;
+    }
+
+    .repeat-name {
+        display: none;
+    }
+
+    .profile {
+        background-color: var(--gray-background);
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+
+    .profile img {
+        display: block;
+        margin: 0.5rem auto;
+    }
+
+    .profile h2 {
+        font-size: var(--link-btn-font-size);
+        padding: 1rem 0;
+    }
+
+    /* toggle classes used in js file */
+    .toggle-profile.collapse-bottom-margin {
+        margin-bottom: 0;
+    }
+    .profile.collapse-top-margin {
+        margin-top: 0;
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 7. Footer Stles ---------------------------------- */
+/* ------------------------------------------------------------------- */
+
+/* Footer Styles */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--gray-background);
+    font-size: 0.8rem;
+}
+
+.footer-links, .footer-legal, .footer-university {
+    margin: 0 10px;
+    padding: 5px;
+    flex: 1 1 auto;
+}
+
+.footer-links ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.footer-links li {
+    margin-right: 15px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-legal a {
+    text-decoration: underline;
+}
+
+/* Additional styles to make sure everything looks good on smaller screens */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* ----------------- 8. Hamg,am---------------------- ---------------- */
+/* ------------------------------------------------------------------- */
+/* General Styles for Hangman Game Container */
+.hangman-game-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Styles for Each Hangman Game Section */
+.hangman-game {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Specific Container for Hangman Gameplay */
+.hangman-gameplay {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.hangman-image-container {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hangman-images {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for Displaying Hangman Images */
+.hangman-images {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for Text Displays and Input Fields in Hangman Game */
+.hangman-word-display, .hangman-wrong-guesses {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.hangman-input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+/* Hangman Button Styles */
+.hangman-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hangman-button:hover {
+    background-color: #0056b3;
+}
+
+.letter-buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.letter-buttons button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
